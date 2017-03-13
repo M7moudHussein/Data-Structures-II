@@ -14,38 +14,27 @@ public class MaxPriorityQueue<T extends Comparable<T>> implements IHeap<T> {
     @Override
     public void add(T object) {
 	tree.add(object);
-	int index = this.size();
-	while (this.getParent(index) != 0 && tree.get(this.getParent(index)).compareTo(tree.get(index)) < 0) {
-	    this.swap(index, this.getParent(index));
-	    index = this.getParent(index);
+	int index = size();
+	while (getParent(index) != 0 && tree.get(getParent(index)).compareTo(tree.get(index)) < 0) {
+	    swap(index, getParent(index));
+	    index = getParent(index);
 	}
-    }
-
-    public void printTree() {
-	for (int i = 1; i < tree.size(); i++) {
-	    System.out.print(i + "\t");
-	}
-	System.out.println();
-	for (int i = 1; i < tree.size(); i++) {
-	    System.out.print(tree.get(i) + "\t");
-	}
-	System.out.println();
     }
 
     @Override
     public T getMax() {
-	return this.size() == 0 ? null : tree.get(1);
+	return size() == 0 ? null : tree.get(1);
     }
 
     @Override
     public T poll() {
-	if (this.size() == 0) {
+	if (isEmpty()) {
 	    throw new RuntimeException("Queue is Empty");
 	}
 	T ret = tree.get(1);
-	this.swap(1, this.size());
-	tree.remove(this.size());
-	this.heapify(1);
+	swap(1, size());
+	tree.remove(size());
+	heapify(1);
 	return ret;
     }
 
@@ -56,17 +45,7 @@ public class MaxPriorityQueue<T extends Comparable<T>> implements IHeap<T> {
 
     @Override
     public boolean isEmpty() {
-	return this.size() == 0;
-    }
-
-    public void buildHeap(T[] array) {
-	for (int i = 0; i < array.length; i++) {
-	    tree.add(array[i]);
-	}
-	int mid = array.length / 2;
-	for (int i = mid; i > 0; i--) {
-	    heapify(i);
-	}
+	return size() == 0;
     }
 
     private int getLeftIndex(int index) {

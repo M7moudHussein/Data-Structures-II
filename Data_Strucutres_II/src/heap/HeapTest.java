@@ -29,6 +29,7 @@ public class HeapTest {
 	    assertEquals(queue.size(), maxQueue.size());
 	    assertEquals(queue.isEmpty(), maxQueue.isEmpty());
 	}
+	assertEquals(queue.isEmpty(), maxQueue.isEmpty());
     }
 
     @Test

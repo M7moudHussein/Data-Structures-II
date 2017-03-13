@@ -1,10 +1,11 @@
 package sortAlgorithms;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class SortingRunner {
     private static final Random RANDOM = new Random();
-    private Integer[] testCase;
+    private static Integer[] testCase;
     private Integer[] backUp;
 
     public SortingRunner(int size) {
@@ -69,8 +70,12 @@ public class SortingRunner {
     }
 
     public static void main(String[] args) {
-	int size = 15000;
+	int size = 10;
 	SortingRunner testApp = new SortingRunner(size);
+	System.out.println(Arrays.asList(testCase));
+	System.out.println();
+	System.out.println("Type\t\tSize\tTime");
+	System.out.println();
 	testApp.useHeapSort();
 	testApp.useQuickSort();
 	testApp.useMergeSort();
@@ -78,6 +83,10 @@ public class SortingRunner {
 	testApp.useBubbleSort();
 	testApp.useInsertionSort();
 	testApp.useSelectionSort();
+	System.out.println();
+	
+	System.out.println(Arrays.asList(testCase));
+	
     }
 
 }
