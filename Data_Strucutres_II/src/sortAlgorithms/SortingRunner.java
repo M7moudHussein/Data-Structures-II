@@ -9,9 +9,16 @@ public class SortingRunner {
     private Integer[] backUp;
 
     public SortingRunner(int size) {
-	initializeTestCase(size);
+	initializeTestCase(size, 1000000);
 	backUp = testCase.clone();
 
+    }
+
+    private void initializeTestCase(int size, int MAX_VALUE) {
+	testCase = new Integer[size];
+	for (int i = 0; i < size; i++) {
+	    testCase[i] = RANDOM.nextInt(MAX_VALUE);
+	}
     }
 
     private void initializeTestCase(int size) {
@@ -69,6 +76,22 @@ public class SortingRunner {
 	System.out.println("SelectionSort\t" + backUp.length + "\t" + (end - start));
     }
 
+    public void useCountSort() {
+	System.arraycopy(backUp, 0, testCase, 0, backUp.length);
+	long start = System.currentTimeMillis();
+	LinearSort.countSort(testCase);
+	long end = System.currentTimeMillis();
+	System.out.println("CountSort\t" + backUp.length + "\t" + (end - start));
+    }
+
+    public void useRadixSort() {
+	System.arraycopy(backUp, 0, testCase, 0, backUp.length);
+	long start = System.currentTimeMillis();
+	LinearSort.radixSort(testCase);
+	long end = System.currentTimeMillis();
+	System.out.println("RadixSort\t" + backUp.length + "\t" + (end - start));
+    }
+
     public static void main(String[] args) {
 	int size = 10;
 	SortingRunner testApp = new SortingRunner(size);
@@ -76,6 +99,9 @@ public class SortingRunner {
 	System.out.println();
 	System.out.println("Type\t\tSize\tTime");
 	System.out.println();
+	testApp.useCountSort();
+	testApp.useRadixSort();
+
 	testApp.useHeapSort();
 	testApp.useQuickSort();
 	testApp.useMergeSort();
@@ -84,9 +110,9 @@ public class SortingRunner {
 	testApp.useInsertionSort();
 	testApp.useSelectionSort();
 	System.out.println();
-	
+
 	System.out.println(Arrays.asList(testCase));
-	
+
     }
 
 }
