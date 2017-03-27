@@ -96,7 +96,7 @@ public class AVLTree<T extends Comparable<T>> implements IAVLTree<T> {
 
     @Override
     public int height() {
-	return isEmpty() ? -1 : root.getHeight();
+	return isEmpty() ? -1 : root.getHeight() + 1;
     }
 
     @Override
