@@ -9,12 +9,14 @@ public class QuadraticHashTable extends PerfectHashTable {
     private boolean containsNull;
     private List<Integer> keys;
     private int size;
+    private int rebuildTimes = 0;
 
     QuadraticHashTable(List<Integer> keys) {
         containsNull = false;
         size = 0;
         this.keys = new ArrayList<>();
         this.keys.addAll(keys);
+        rebuildTimes = 0;
     }
 
     public void build() {
@@ -46,7 +48,13 @@ public class QuadraticHashTable extends PerfectHashTable {
                 }
             }
             if (hasCollisions) clearHashTable();
+            rebuildTimes++;
         } while (hasCollisions);
+    }
+
+    @Override
+    public int getRebuildTimes() {
+        return rebuildTimes;
     }
 
     private void clearHashTable() {
@@ -93,5 +101,4 @@ public class QuadraticHashTable extends PerfectHashTable {
         h = new Integer[32];
         for (int i = 0; i < h.length; i++) h[i] = RANDOM.nextInt(1 << (b - 1));
     }
-
 }

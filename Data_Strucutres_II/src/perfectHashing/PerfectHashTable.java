@@ -16,4 +16,6 @@ public abstract class PerfectHashTable {
     public abstract int size();
 
     public abstract void build();
+
+    public abstract int getRebuildTimes();
 }

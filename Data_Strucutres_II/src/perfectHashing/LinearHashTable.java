@@ -11,6 +11,7 @@ public class LinearHashTable extends PerfectHashTable {
     private boolean containsNull;
     private int fullSize, totalSize;
     private int size;
+    private int rebuildTimes;
 
     LinearHashTable(List<Integer> keys) {
         containsNull = false;
@@ -18,13 +19,13 @@ public class LinearHashTable extends PerfectHashTable {
         this.keys.addAll(keys);
         makePrime(keys.size());
         fullSize = 0;
+        rebuildTimes = 0;
     }
 
     public void build() {
         long start = System.currentTimeMillis();
         hashTable = new ArrayList<List<Integer>>();
         quadHash = new ArrayList<QuadraticHashTable>();
-        int re = 0;
         do {
             clearHashTable();
             totalSize = 0;
@@ -43,8 +44,13 @@ public class LinearHashTable extends PerfectHashTable {
                 }
             }
             buildQuadratic();
-            re++;
+            rebuildTimes++;
         } while (totalSize > 4 * keys.size());
+    }
+
+    @Override
+    public int getRebuildTimes() {
+        return rebuildTimes;
     }
 
     private void buildQuadratic() {

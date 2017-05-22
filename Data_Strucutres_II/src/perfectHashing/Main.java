@@ -14,7 +14,7 @@ public class Main {
 //        List<Integer> test = readFile("test1.txt");
         List<Integer> test = new LinkedList<>();
 //        int n = test.size();
-        int n = 10000;
+        int n = 1000000;
         System.out.println("Test Size =\t" + n);
         for (int i = 0; i < n; i++) {
             test.add(random.nextInt(100));
@@ -26,6 +26,7 @@ public class Main {
         hashTable.build();
         System.out.println("Time:\t" + (System.currentTimeMillis() - t) + " ms.");
         System.out.println("Memory:\t" + hashTable.fullSize() + " Slots\n");
+        System.out.println("Rebuild Times:\t" + hashTable.getRebuildTimes() + " times\n");
 
         for (Integer aTest : test) {
             if (hashTable.contains(aTest) != set.contains(aTest)) {
