@@ -1,42 +1,67 @@
-import java.util.Random;
+import java.util.*;
 
-public class LinearHashTable {
+public class LinearHashTable implements PerfectHashTable {
     private static final Random RANDOM = new Random();
-    private Integer[] array;
-    private QuadraticHashTable[] hashTable;
+    private List<Integer> keys;
+    private List<QuadraticHashTable> hashTable;
     private Integer[] h;
-    private int b;
     private boolean containsNull;
+    private int fullSize;
+    private int size;
 
-    LinearHashTable(Integer[] array) {
-        this.array = array.clone();
-        buildTable();
+    LinearHashTable() {
+        containsNull = false;
+        keys = new ArrayList<>();
+        fullSize = 0;
     }
 
-    private void buildTable() {
-        containsNull = false;
-        hashTable = new QuadraticHashTable[array.length];
-        b = (int) (Math.log10(hashTable.length) / Math.log10(2) + 1);
-        buildHTable();
-        for (Integer number : array) {
-            if (number == null) {
-                containsNull = true;
-            } else {
+    @Override
+    public void build() {
+        long start = System.currentTimeMillis();
+        hashTable = new ArrayList<>();
+        long totalSize;
+//        do {
+        clearHashTable();
+        totalSize = 0;
+        int b = (int) (Math.log10(hashTable.size()) / Math.log10(2) + 1);
+        buildHTable(b);
+        for (Integer number : keys) {
+            if (number == null) containsNull = true;
+            else {
                 int index = getHashCode(number);
-                if (index >= hashTable.length || index < 0) {
-                    throw new RuntimeException(index + "key Out Of Bound");
-                } else {
-                    if (hashTable[index] == null) {
-                        hashTable[index] = new QuadraticHashTable(new Integer[]{number});
-                    } else if (!hashTable[index].contains(number)) {
-                        hashTable[index] = new QuadraticHashTable(concat(hashTable[index].getTable(), new Integer[]{number}));
-                    }
+                if (index >= hashTable.size() || index < 0) throw new RuntimeException(index + "key Out Of Bound");
+                else {
+                    if (hashTable.get(index) == null) hashTable.set(index, new QuadraticHashTable());
+                    hashTable.get(index).add(number);
                 }
+            }
+        }
+        for (QuadraticHashTable table : hashTable) {
+            if (table != null) {
+                table.build();
+                totalSize += table.fullSize();
+                size += table.size();
+                fullSize += table.fullSize();
+            } else {
+                fullSize++;
+            }
+        }
+//        } while (totalSize > 4 * keys.size());
+    }
+
+    private void clearHashTable() {
+        if (hashTable.size() != keys.size()) {
+            for (int i = 0; i < keys.size(); i++) {
+                hashTable.add(null);
+            }
+        } else {
+            for (int i = 0; i < hashTable.size(); i++) {
+                hashTable.set(i, null);
             }
         }
     }
 
-    private void buildHTable() {
+    private void buildHTable(int b) {
         h = new Integer[31];
         for (int i = 0; i < h.length; i++) {
             h[i] = RANDOM.nextInt(1 << (b - 1));
@@ -53,27 +78,50 @@ public class LinearHashTable {
         return hashCode;
     }
 
-    private Integer[] concat(Integer[] a, Integer[] b) {
-        Integer[] ans = new Integer[a.length + b.length];
-        int i = 0;
-        for (Integer number : a) {
-            ans[i++] = number;
-        }
-        for (Integer number : b) {
-            ans[i++] = number;
-        }
-        return ans;
-    }
-
+    @Override
     public boolean contains(Integer number) {
         if (number == null) {
             return containsNull;
         } else {
             int index = getHashCode(number);
-            if (index < 0 || index >= hashTable.length) {
+            if (index < 0 || index >= hashTable.size()) {
                 throw new RuntimeException(index + "key Out Of Bound");
             } else
-                return hashTable[index] != null && hashTable[index].contains(number);
+                return hashTable.get(index) != null && hashTable.get(index).contains(number);
         }
+    }
+
+    @Override
+    public void clear() {
+        if (hashTable != null) hashTable.clear();
+        if (h != null) h = null;
+        if (keys != null) keys.clear();
+        size = 0;
+        fullSize = 0;
+    }
+
+    @Override
+    public void addAll(Collection<Integer> arr) {
+        keys.addAll(arr);
+    }
+
+    @Override
+    public void addAll(List<Integer> arr) {
+        keys.addAll(arr);
+    }
+
+    @Override
+    public void addAll(Integer[] numbers) {
+        keys.addAll(Arrays.asList(numbers));
+    }
+
+    @Override
+    public int size() {
+        return keys.size();
+    }
+
+    @Override
+    public int fullSize() {
+        return this.fullSize;
     }
 }

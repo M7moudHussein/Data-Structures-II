@@ -6,11 +6,11 @@ import eg.edu.alexu.csd.filestructure.avl.impl.*;
 public class TestRunner {
 
     public static IAVLTree getImplementationInstance() {
-	return new AVLTree();
+        return new AVLTree();
     }
 
     public static IDictionary getDicImplementationInstance() {
-	return new Dictionary();
+        return new Dictionary();
     }
 
 }
