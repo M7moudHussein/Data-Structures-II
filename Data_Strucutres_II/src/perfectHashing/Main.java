@@ -10,7 +10,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         Random random = new Random();
-        List<Integer> test = readFile("test.txt");
+        List<Integer> test = readFile("test1.txt");
         int n = test.size();
         System.out.println("Test Size =\t" + n);
 //        for (int i = 0; i < n; i++) {

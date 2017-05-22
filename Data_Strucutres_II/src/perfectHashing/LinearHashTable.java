@@ -15,6 +15,10 @@ public class LinearHashTable implements PerfectHashTable {
         containsNull = false;
         keys = new ArrayList<>();
         fullSize = 0;
+        for(int i = keys.size(); p == -1;i++) {
+	    if(isPrime(i))
+		p = i;
+	}
     }
 
     @Override
@@ -48,7 +52,7 @@ public class LinearHashTable implements PerfectHashTable {
                     fullSize++;
                 }
             }
-        } while (totalSize > 5 * keys.size());
+        } while (totalSize > 4 * keys.size());
     }
 
     private void clearHashTable() {
@@ -83,11 +87,6 @@ public class LinearHashTable implements PerfectHashTable {
     private void buildHTable(int b) {
 	a = RANDOM.nextInt(Integer.MAX_VALUE);
 	c = RANDOM.nextInt(Integer.MAX_VALUE);
-	p = -1;
-	for(int i = keys.size(); p == -1;i++) {
-	    if(isPrime(i))
-		p = i;
-	}
     }
 
     private int getHashCode(Integer number) {
