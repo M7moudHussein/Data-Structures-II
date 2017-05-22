@@ -1,4 +1,5 @@
 package perfectHashing;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -10,14 +11,16 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         Random random = new Random();
-        List<Integer> test = readFile("test1.txt");
-        int n = test.size();
+//        List<Integer> test = readFile("test1.txt");
+        List<Integer> test = new LinkedList<>();
+//        int n = test.size();
+        int n = 10000;
         System.out.println("Test Size =\t" + n);
-//        for (int i = 0; i < n; i++) {
-//            test.add(random.nextInt(100));
-//        }
+        for (int i = 0; i < n; i++) {
+            test.add(random.nextInt(100));
+        }
         HashSet<Integer> set = new HashSet<>(test);
-        LinearHashTable hashTable = new LinearHashTable(test);
+        PerfectHashTable hashTable = new LinearHashTable(test);
         System.out.println("Building...");
         long t = System.currentTimeMillis();
         hashTable.build();
@@ -44,22 +47,23 @@ public class Main {
         System.out.println("Success 2!");
 
     }
-    
+
     static List<Integer> readFile(String fileName) {
-	List<Integer> numbers = new LinkedList<Integer>();
-	try {
-	    BufferedReader br = new BufferedReader(new FileReader(fileName));
-	    String line = null;
-	    while ((line = br.readLine()) != null) {
-	      String[] values = line.split(",");
-	      for (String str : values) {
-	        numbers.add(Integer.parseInt(str));
-	      }
-	    }
-	    br.close();
-	} catch(IOException e) {
-	    System.out.println("ERROR READING FILE");
-	}
-	return numbers;
+        List<Integer> numbers = new LinkedList<>();
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(fileName));
+            System.out.println("Here");
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(",");
+                for (String str : values) {
+                    numbers.add(Integer.parseInt(str));
+                }
+            }
+            br.close();
+        } catch (IOException e) {
+            System.out.println("ERROR READING FILE");
+        }
+        return numbers;
     }
 }

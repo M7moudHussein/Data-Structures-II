@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5457e9f8-2d69-4b59-b83d-8dddf19fa148" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/IDictionary.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/IDictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/INode.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/INode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/impl/AVLTree.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/impl/AVLTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/impl/Dictionary.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/impl/Dictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/impl/Node.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/impl/Node.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/tester/AVLTest.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/tester/AVLTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/tester/DictionaryRunner.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/avl/tester/DictionaryRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/test/avl/AVLTreeTest.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/test/avl/AVLTreeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/test/avl/DictionaryTest.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/test/avl/DictionaryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/test/avl/TestRunner.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/test/avl/TestRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/test/avl/TestUtil.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/eg/edu/alexu/csd/filestructure/test/avl/TestUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/heap/HeapBuilder.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/heap/HeapBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/heap/HeapTest.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/heap/HeapTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/heap/MaxPriorityQueue.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/heap/MaxPriorityQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/LinearHashTable.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/LinearHashTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/Main.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/QuadraticHashTable.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/QuadraticHashTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/HeapSorter.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/HeapSorter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/LinearSort.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/LinearSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/NLogNSort.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/NLogNSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/NSquaredSort.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/NSquaredSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/SortingRunner.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/SortingRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/SortingTest.java" afterPath="$PROJECT_DIR$/Data_Strucutres_II/src/sortAlgorithms/SortingTest.java" />
-    </list>
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="797907c6-1e26-44ee-9ff0-92e7b5962a77" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,73 +13,29 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LinearHashTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/LinearHashTable.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/perfectHashing/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
-                <element signature="e#3205#3206#0" expanded="true" />
-                <element signature="e#3237#3238#0" expanded="true" />
-                <element signature="e#3386#3387#0" expanded="true" />
-                <element signature="e#3420#3421#0" expanded="true" />
-                <element signature="e#3463#3464#0" expanded="true" />
-                <element signature="e#3499#3500#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuadraticHashTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/QuadraticHashTable.java">
+      <file leaf-file-name="LinearHashTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/perfectHashing/LinearHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="49" column="49" lean-forward="false" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+            <state relative-caret-position="136">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PerfectHashTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/PerfectHashTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>clear</find>
-    </findStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -113,10 +45,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/PerfectHashTable.java" />
-        <option value="$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/LinearHashTable.java" />
-        <option value="$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/QuadraticHashTable.java" />
-        <option value="$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/Main.java" />
+        <option value="$PROJECT_DIR$/src/perfectHashing/PerfectHashTable.java" />
+        <option value="$PROJECT_DIR$/src/perfectHashing/QuadraticHashTable.java" />
+        <option value="$PROJECT_DIR$/src/perfectHashing/LinearHashTable.java" />
+        <option value="$PROJECT_DIR$/src/perfectHashing/Main.java" />
       </list>
     </option>
   </component>
@@ -132,7 +64,6 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -148,11 +79,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Data-Structures-II" />
+              <option name="myItemId" value="Data_Strucutres_II" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -162,7 +96,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Data-Structures-II" />
+              <option name="myItemId" value="Data_Strucutres_II" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -176,7 +110,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Data-Structures-II" />
+              <option name="myItemId" value="Data_Strucutres_II" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -194,16 +128,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="SearchEverywhereHistoryKey" value="keymap&#9;ACTION&#9;ChangeKeymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="compiler&#9;ACTION&#9;EditorPopupMenu.Run" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -219,8 +153,13 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="perfectHashing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="perfectHashing.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -229,7 +168,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Data_Strucutres_II1" />
+      <module name="Data_Strucutres_II" />
       <envs />
       <method />
     </configuration>
@@ -630,17 +569,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5457e9f8-2d69-4b59-b83d-8dddf19fa148" name="Default" comment="" />
-      <created>1495415578124</created>
+      <changelist id="797907c6-1e26-44ee-9ff0-92e7b5962a77" name="Default" comment="" />
+      <created>1495451280128</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1495415578124</updated>
-      <workItem from="1495415582087" duration="7760000" />
+      <updated>1495451280128</updated>
+      <workItem from="1495451294718" duration="576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7760000" />
+    <option name="totallyTimeSpent" value="576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -649,21 +588,20 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50292826" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2579425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -674,6 +612,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -692,48 +631,126 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/PerfectHashTable.java">
+    <entry file="file://$PROJECT_DIR$/src/perfectHashing/PerfectHashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/QuadraticHashTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="49" column="49" lean-forward="false" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+        <state relative-caret-position="68">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/LinearHashTable.java">
+    <entry file="file://$PROJECT_DIR$/src/perfectHashing/QuadraticHashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="e#3205#3206#0" expanded="true" />
-            <element signature="e#3237#3238#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
-            <element signature="e#3420#3421#0" expanded="true" />
-            <element signature="e#3463#3464#0" expanded="true" />
-            <element signature="e#3499#3500#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-34">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_Strucutres_II/src/perfectHashing/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/perfectHashing/LinearHashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="136">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perfectHashing/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Data_Strucutres_II</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
