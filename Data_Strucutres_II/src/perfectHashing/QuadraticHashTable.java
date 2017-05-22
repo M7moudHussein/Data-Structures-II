@@ -1,3 +1,4 @@
+package perfectHashing;
 import java.util.*;
 
 public class QuadraticHashTable implements PerfectHashTable {
@@ -7,7 +8,7 @@ public class QuadraticHashTable implements PerfectHashTable {
     private boolean containsNull;
     private List<Integer> keys;
     private int size;
-
+    
     QuadraticHashTable() {
         containsNull = false;
         size = 0;
@@ -25,6 +26,7 @@ public class QuadraticHashTable implements PerfectHashTable {
             cnt++;
             buildH(b);
             hasCollisions = false;
+            int i  =0 ;
             for (Integer number : keys) {
                 if (number == null && !containsNull) {
                     containsNull = true;
@@ -47,7 +49,7 @@ public class QuadraticHashTable implements PerfectHashTable {
             }
             if (hasCollisions) clearHashTable();
         } while (hasCollisions);
-        System.out.println("Rebuilt\t" + cnt + " times");
+//        System.out.println("Rebuilt\t" + cnt + " times");
     }
 
     public void add(Integer number) {
@@ -70,6 +72,7 @@ public class QuadraticHashTable implements PerfectHashTable {
         h = new Integer[32];
         for (int i = 0; i < h.length; i++) h[i] = RANDOM.nextInt(1 << (b - 1));
     }
+   
 
     @Override
     public boolean contains(Integer key) {

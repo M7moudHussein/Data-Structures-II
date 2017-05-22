@@ -1,3 +1,5 @@
+package perfectHashing;
+
 import java.util.*;
 
 public class LinearHashTable implements PerfectHashTable {
@@ -7,7 +9,7 @@ public class LinearHashTable implements PerfectHashTable {
     private Integer[] h;
     private boolean containsNull;
     private int fullSize;
-    private int size;
+    private long size, a, c, p = 10007;
 
     LinearHashTable() {
         containsNull = false;
@@ -20,33 +22,33 @@ public class LinearHashTable implements PerfectHashTable {
         long start = System.currentTimeMillis();
         hashTable = new ArrayList<>();
         long totalSize;
-//        do {
-        clearHashTable();
-        totalSize = 0;
-        int b = (int) (Math.log10(hashTable.size()) / Math.log10(2) + 1);
-        buildHTable(b);
-        for (Integer number : keys) {
-            if (number == null) containsNull = true;
-            else {
-                int index = getHashCode(number);
-                if (index >= hashTable.size() || index < 0) throw new RuntimeException(index + "key Out Of Bound");
+        do {
+            clearHashTable();
+            totalSize = 0;
+            int b = (int) (Math.log10(hashTable.size()) / Math.log10(2) + 1);
+            buildHTable(b);
+            for (Integer number : keys) {
+                if (number == null) containsNull = true;
                 else {
-                    if (hashTable.get(index) == null) hashTable.set(index, new QuadraticHashTable());
-                    hashTable.get(index).add(number);
+                    int index = getHashCode(number);
+                    if (index >= hashTable.size() || index < 0) throw new RuntimeException(index + "key Out Of Bound");
+                    else {
+                        if (hashTable.get(index) == null) hashTable.set(index, new QuadraticHashTable());
+                        hashTable.get(index).add(number);
+                    }
                 }
             }
-        }
-        for (QuadraticHashTable table : hashTable) {
-            if (table != null) {
-                table.build();
-                totalSize += table.fullSize();
-                size += table.size();
-                fullSize += table.fullSize();
-            } else {
-                fullSize++;
+            for (QuadraticHashTable table : hashTable) {
+                if (table != null) {
+                    table.build();
+                    totalSize += table.fullSize();
+                    size += table.size();
+                    fullSize += table.fullSize();
+                } else {
+                    fullSize++;
+                }
             }
-        }
-//        } while (totalSize > 4 * keys.size());
+        } while (totalSize > 5 * keys.size());
     }
 
     private void clearHashTable() {
@@ -61,21 +63,45 @@ public class LinearHashTable implements PerfectHashTable {
         }
     }
 
+//    private void buildHTable(int b) {
+//        h = new Integer[31];
+//        for (int i = 0; i < h.length; i++) {
+//            h[i] = RANDOM.nextInt(1 << (b - 1));
+//        }
+//    }
+//
+//    private int getHashCode(Integer number) {
+//        long hashCode = 0;
+//        for (int i = 0; i < h.length; i++) {
+//            if ((number & (1 << i)) != 0) {
+//                hashCode = hashCode ^ h[i];
+//            }
+//        }
+//        return (int)hashCode;
+//    }
+    
     private void buildHTable(int b) {
-        h = new Integer[31];
-        for (int i = 0; i < h.length; i++) {
-            h[i] = RANDOM.nextInt(1 << (b - 1));
-        }
+	a = RANDOM.nextInt(Integer.MAX_VALUE);
+	c = RANDOM.nextInt(Integer.MAX_VALUE);
+	p = -1;
+	for(int i = keys.size(); p == -1;i++) {
+	    if(isPrime(i))
+		p = i;
+	}
     }
 
     private int getHashCode(Integer number) {
-        int hashCode = 0;
-        for (int i = 0; i < h.length; i++) {
-            if ((number & (1 << i)) != 0) {
-                hashCode = hashCode ^ h[i];
-            }
-        }
-        return hashCode;
+        long hashCode = ((a * number + c) % p) % keys.size();
+        return (int)hashCode;
+    }
+    
+    private boolean isPrime(int num) {
+	for(int i = 2; i * i <= num; i++) {
+	    if(num % i == 0) {
+		return false;
+	    }
+	}
+	return true;
     }
 
     @Override
