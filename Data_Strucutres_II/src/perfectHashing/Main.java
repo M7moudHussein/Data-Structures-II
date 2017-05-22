@@ -17,8 +17,7 @@ public class Main {
 //            test.add(random.nextInt(100));
 //        }
         HashSet<Integer> set = new HashSet<>(test);
-        PerfectHashTable hashTable = new LinearHashTable();
-        hashTable.addAll(test);
+        LinearHashTable hashTable = new LinearHashTable(test);
         System.out.println("Building...");
         long t = System.currentTimeMillis();
         hashTable.build();
